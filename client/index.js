@@ -8,6 +8,7 @@ import { ApolloProvider } from 'react-apollo';
 import App from './components/App';
 import PostList from './components/PostList';
 import PostCreate from './components/PostCreate';
+import PostDetail from './components/PostDetail';
 
 const client = new ApolloClient({});
 
@@ -18,6 +19,7 @@ const Root = () => {
         <Route path="/" component={App}>
           <IndexRoute component={PostList}/>
           <Route path="posts/create" component={PostCreate} />
+          <Route path="posts/:id" component={PostDetail} />
         </Route>
       </Router>
     </ApolloProvider>

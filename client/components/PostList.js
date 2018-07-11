@@ -17,7 +17,7 @@ class PostList extends Component {
         return this.props.data.posts.map(post => {
             return (
                 <li key={post.id} className="collection-item">
-                    {post.title}
+                    <Link to={`/posts/${post.id}`}>{post.title}</Link>
                     <i className="material-icons" onClick={() => this.onPostDelete(post.id)}>delete</i>
                 </li>
             ) 
