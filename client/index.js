@@ -10,7 +10,9 @@ import PostList from './components/PostList';
 import PostCreate from './components/PostCreate';
 import PostDetail from './components/PostDetail';
 
-const client = new ApolloClient({});
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id
+});
 
 const Root = () => {
   return (

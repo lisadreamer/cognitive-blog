@@ -28,6 +28,7 @@ class PostList extends Component {
         if (this.props.data.loading) { return <div>Loading</div>}
         return (
             <div>
+                <h3>Cognitive science</h3>
                 <ul className="collection">
                     {this.renderPosts()} 
                 </ul>

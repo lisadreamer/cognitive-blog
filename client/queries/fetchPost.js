@@ -9,6 +9,7 @@ export default gql`
             comments {
                 id
                 content
+                likes
             }
         }
     }

@@ -35,7 +35,9 @@ const mutation = gql`
         addCommentToPost(postId: $postId, content: $content) {
             id
             comments {
+                id
                 content
+                likes
             }
         }
     }
