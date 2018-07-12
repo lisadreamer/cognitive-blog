@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router';
 import { graphql } from 'react-apollo';
 import fetchPost from '../queries/fetchPost';
+import CommentCreate from './CommentCreate';
+import CommentList from './CommentList';
 
 class PostDetail extends Component {
     render() {
@@ -15,6 +17,8 @@ class PostDetail extends Component {
                     <Link to="/">Back</Link>
                     <h4>{post.title}</h4>
                     <p>{post.content}</p>
+                    <CommentList comments={post.comments} />
+                    <CommentCreate postId={this.props.params.id} />
                 </div>
             );
         }
