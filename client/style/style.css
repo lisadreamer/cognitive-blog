@@ -1,8 +1,3 @@
-.collection-item {
-    display: flex;
-    justify-content: space-between;
-}
-
 .material-icons {
     cursor: pointer;
     margin-right: 5px;
@@ -10,9 +5,98 @@
 
 .comment-likes {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .comment-likes span {
     min-width: 30px;
+}
+
+.header {
+    //height: 95vh;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.header .bg-img {
+    max-width: 100%;
+}
+
+.logo-box{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo{
+    color: #fff;
+}
+
+.text-box {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    transform: translate(-35%, -50%);
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 15px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 13.7px;
+}
+
+.container {
+    font-family: monospace;
+}
+
+.container ul {
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+}
+
+.container ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*border-bottom: none !important;
+    position: relative;*/
+}
+
+.container ul li a {
+    display: flex;
+    flex-direction: row;
+}
+
+.container ul li a img {
+    max-width: 120px;
+    max-height: 67px;
+    margin-right: 15px;
+}
+
+.container ul li a p {
+    /*text-align: center;*/
+}
+
+.container ul li i {
+    /*position: absolute;
+    right: 8%;
+    top: 12%;
+    color: white;*/
 }

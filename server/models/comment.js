@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const options = {
+  usePushEach: true
+}
+
 const CommentSchema = new Schema({
   post: {
     type: Schema.Types.ObjectId,
@@ -8,7 +12,7 @@ const CommentSchema = new Schema({
   },
   likes: { type: Number, default: 0 },
   content: { type: String }
-});
+}, options);
 
 CommentSchema.statics.like = function(id) {
   const Comment = mongoose.model('comment');

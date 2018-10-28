@@ -13,7 +13,7 @@ class PostDetail extends Component {
             return <div>Loading</div>
         } else {
             return (
-                <div>
+                <div className="container">
                     <Link to="/">Back</Link>
                     <h4>{post.title}</h4>
                     <p>{post.content}</p>

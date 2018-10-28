@@ -5,6 +5,7 @@ export default gql`
     posts {
         id
         title
+        img
     }
 }
 `;

@@ -6,6 +6,7 @@ export default gql`
             id
             title
             content
+            img
             comments {
                 id
                 content

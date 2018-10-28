@@ -1,9 +1,14 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+const options = {
+    usePushEach: true
+}
+
 const PostSchema = new Schema({
   title  : { type: String },
   content: { type: String },
+  img    : { type: String },
   user: {
     type: Schema.Types.ObjectId,
     ref: 'user'
@@ -12,7 +17,7 @@ const PostSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'comment'
   }]
-});
+}, options);
 
 PostSchema.statics.addComment = function(id, content) {
   const Comment = mongoose.model('comment');

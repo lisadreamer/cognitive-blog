@@ -13,10 +13,11 @@ const mutation = new GraphQLObjectType({
       type: PostType,
       args: {
         title: { type: GraphQLString },
-        content: { type: GraphQLString }
+        content: { type: GraphQLString },
+        img: { type: GraphQLString }
       },
-      resolve(parentValue, { title, content }) {
-        return (new Post({ title, content })).save()
+      resolve(parentValue, { title, content, img }) {
+        return (new Post({ title, content, img })).save()
       }
     },
     addCommentToPost: {

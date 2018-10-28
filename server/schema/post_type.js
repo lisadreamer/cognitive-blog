@@ -10,6 +10,7 @@ const PostType = new GraphQLObjectType({
     id: { type: GraphQLID },
     title: { type: GraphQLString },
     content: { type: GraphQLString },
+    img: { type: GraphQLString },
     comments: {
       type: new GraphQLList(CommentType),
       resolve(parentValue) {
