@@ -7,7 +7,6 @@ const config = {
     output: {
         path: '/',
         filename: 'bundle.js',
-        publicPath : ''
     },
     module: {
         rules: [
@@ -26,8 +25,7 @@ const config = {
                     {
                         loader: 'url-loader',
                         options: { limit: 40000 } // Convert images < 40kb to base64 strings
-                    },
-                    'image-webpack-loader'
+                    }
                 ]
             }
         ]
