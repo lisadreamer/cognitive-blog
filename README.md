@@ -1,9 +1,6 @@
-# cognitive-blog
+https://cognitive-blog.herokuapp.com
 
-continuing studying graphql and apollo with react and mongodb 
-
-Attention!
-mlab db user was changed. creaet your own MongoDB Deployment!
+Continuing studying GraphQL and Apollo with React and Mongodb
 
 Installation
 ------------
@@ -22,5 +19,5 @@ Testing out graphql queries
 http://localhost:4000/graphql  - graphiql
 
 
-
-
+Create your own MongoDB Deployment.
+Edit server.js, replace MONGO_URI with your MongoLab URI
